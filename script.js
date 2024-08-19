@@ -63,7 +63,6 @@ function showPage(page) {
                     <p>Guru SMK TRIMULIA JAKARTA pada mapel keamanan jaringan serta operational system serta termasuk dari salah satu IT Team atau teknisi.</p>
                     <p>Guru pembimbing eskul IT Club yang dibangun oleh beliau sendiri dengan jumlah anggota kurang lebih 40 orang</p>
                     <a href="mailto:solihin@smktrimulia.sch.id">solihin@smktrimulia.sch.id</a>
-                    <p>contact: (+62) 878-8303-3510</p>
                     </div>
                 </div>
                 <p class="txtcontent">IT Club telah merancang beberapa projek sebagai bahan acuan yang akan ditetapkan untuk bahan pembelajaran pada eskul, beberapa projek yang ditetapkan yaitu:</p>
