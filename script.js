@@ -80,7 +80,33 @@ function showPage(page) {
                     <title>Anggota</title>
                 </head>
                 <h1 class="hedpr"><span style="color: red;">Daftar Anggota</span>IT Club</h1>
-                <p>This is the about page content.</p>`;
+                <div class="listanggota"> 
+                    <div class="imgcontainer">
+                        <img src="assets/solihin.jpeg" alt="photo anggota">
+                        <div class="photoname">Solihin, S.T.</div>
+                    </div>
+                    <div class="imgcontainer">
+                        <img src="" alt="photo anggota">
+                        <div class="photoname"> </div>
+                    </div>
+                    <div class="imgcontainer">
+                        <img src="" alt="photo anggota">
+                        <div class="photoname"> </div>
+                    </div>
+                    <div class="imgcontainer">
+                        <img src="" alt="photo anggota">
+                        <div class="photoname"> </div>
+                    </div>
+                    <div class="imgcontainer">
+                        <img src="" alt="photo anggota">
+                        <div class="photoname"> </div>
+                    </div>
+                    <div class="imgcontainer">
+                        <img src="" alt="photo anggota">
+                        <div class="photoname"> </div>
+                    </div>
+                </div>
+                `;
             break;
         case 'project': 
             contentDiv.innerHTML = `
