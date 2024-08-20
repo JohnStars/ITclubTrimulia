@@ -46,7 +46,15 @@ a {
     font-style: normal;
     text-align: center;
     font-size: xx-large;
-  }
+}
+
+.hedprsub {
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: x-large;
+}
 
 /*navigation bar style*/
 .header{
@@ -79,6 +87,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1000;
 }
 
 .nav-item {
@@ -149,9 +158,9 @@ a {
 
 }
 
+/*custom preset*/
 body{
-    background: rgb(16,127,189);
-    background: linear-gradient(45deg, rgba(16,127,189,1) 0%, rgba(215,9,9,1) 100%);
+    background-color: #101010;
     font-style: Arial, sans-serif;
 }
 
@@ -170,6 +179,7 @@ body{
     margin-right: 10px;
 }
 
+/*homepage*/
 .pencipta{
     background-color: #f9f9f9; /* Light grey background to highlight */
     border-left: 5px solid #ff6347; /* Add a colored border to the left */
@@ -194,12 +204,44 @@ body{
     justify-content: center;
 }
 
+/*project subpages*/
+.prjkicon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.doubleprjk{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
 .prjk{
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.prjkcontent{
+    position: relative;
+    width: 900px;
+    overflow: hidden;
+    border-radius: 8px;
+    justify-content: center;
+    z-index: 1;
+}
+
+.prjkcontent img{
     display: block;
-    width: 130;
-    height: 130;
-    margin: 10px auto;
-    cursor: pointer;
+    width: 100%;
+    height: auto;
 }
 
 /*member subpages*/
@@ -211,17 +253,33 @@ body{
     justify-content: center;
 }
 
-.imgcontainer{
-    position: relative;
+.imgcontainerlead{
+    position: absolute;
     width: 300px;
     overflow: hidden;
     border-radius: 8px;
+    z-index: 1;
+}
+
+.imgcontainerlead img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.imgcontainer{
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 8px;
+    z-index: 1;
+    padding-top: 500px;
 }
 
 .imgcontainer img{
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .photoname{
