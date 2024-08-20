@@ -79,15 +79,15 @@ function showPage(page) {
                 <head>
                     <title>Anggota</title>
                 </head>
-                <h1 class="hedpr">Daftar Anggota IT Club</h1>
+                <h1 class="hedpr"><span style="color: red">Daftar Anggota</span>IT Club</h1>
                 <p>This is the about page content.</p>`;
             break;
-        case 'project':
+        case 'project': 
             contentDiv.innerHTML = `
                 <head>
                     <title>Projek</title>
                 </head>
-                <h1 class="hedpr"><span style="color: red">Projek</span><span style="color: yellow">IT Club</span></h1>
+                <h1 class="hedpr"><span style="color: red">Projek</span>IT Club</h1>
                 <p>IT Club TRIMULIA menyediakan beberapa projek yang akan dijadikan acuan untuk pembelajaran, pada dasarnya sebuah projek akan mengambil waktu paling sedikit yaitu 1 bulan. <br> 
                 Dibawah ini merupakan beberapa projek yang kami sediakan yaitu:</p>
                 <a href="#wdev"><img src="Assets/testdongs.png" class="prjk"></a>
@@ -98,7 +98,7 @@ function showPage(page) {
                 <head>
                     <title>Kontak</title>
                 </head>
-                <h1 class="hedpr">Kontak IT Club</h1>
+                <h1 class="hedpr"><span style="color: red">Kontak</span>IT Club</h1>
                 <p>This is the contact page content. Include a contact form or details here.</p>`;
             break;
         case 'wdev':
