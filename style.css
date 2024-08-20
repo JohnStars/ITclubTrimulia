@@ -221,13 +221,14 @@ body{
 .imgcontainer img{
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .photoname{
     position: absolute;
     bottom: 10px;
     left: 10px;
-    background-color: grba (0,0,0,0.5);
+    background-color: grey;
     color: white;
     padding: 5px;
     border-radius: 3px;
