@@ -201,3 +201,12 @@ body{
     margin: 10px auto;
     cursor: pointer;
 }
+
+/*member subpages*/
+.listanggota{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+}
