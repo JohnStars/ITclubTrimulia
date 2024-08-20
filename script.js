@@ -79,7 +79,7 @@ function showPage(page) {
                 <head>
                     <title>Anggota</title>
                 </head>
-                <h1 class="hedpr"><span style="color: red">Daftar Anggota</span>IT Club</h1>
+                <h1 class="hedpr"><span style="color: red;">Daftar Anggota</span>IT Club</h1>
                 <p>This is the about page content.</p>`;
             break;
         case 'project': 
@@ -87,7 +87,7 @@ function showPage(page) {
                 <head>
                     <title>Projek</title>
                 </head>
-                <h1 class="hedpr"><span style="color: red">Projek</span>IT Club</h1>
+                <h1 class="hedpr"><span style="color: red;">Projek</span>IT Club</h1>
                 <p>IT Club TRIMULIA menyediakan beberapa projek yang akan dijadikan acuan untuk pembelajaran, pada dasarnya sebuah projek akan mengambil waktu paling sedikit yaitu 1 bulan. <br> 
                 Dibawah ini merupakan beberapa projek yang kami sediakan yaitu:</p>
                 <a href="#wdev"><img src="Assets/testdongs.png" class="prjk"></a>
@@ -98,7 +98,7 @@ function showPage(page) {
                 <head>
                     <title>Kontak</title>
                 </head>
-                <h1 class="hedpr"><span style="color: red">Kontak</span>IT Club</h1>
+                <h1 class="hedpr"><span style="color: red;">Kontak</span>IT Club</h1>
                 <p>This is the contact page content. Include a contact form or details here.</p>`;
             break;
         case 'wdev':
@@ -106,7 +106,7 @@ function showPage(page) {
                 <head>
                     <title>WebDev</title>
                 </head>
-                <h1 class="hedpr">Website Development</h1>
+                <h1 class="hedpr"><span style="color: red;">Website</span><span style="color: navy;">Development</span></h1>
                 <p>Eskul IT Club di Trimulia menyediakan proyek pengembang website, yaitu membuat website sendiri dengan menggunakan bantuan google sites untuk permulaan.</p>`;
             break;
         case 'arduino':
@@ -114,7 +114,7 @@ function showPage(page) {
                 <head>
                     <title>Arduino</title>
                 </head>
-                <h1 class="hedpr">IoT (Internet Of Things)</h1>
+                <h1 class="hedpr"><span style="color: red;">IoT</span><span style="color: navy;">(Internet Of Things)</span></h1>
                 <p>Eskul IT Club di Trimulia menyediakan proyek pengembang website, yaitu membuat website sendiri dengan menggunakan bantuan google sites untuk permulaan.</p>`;
             break;
         default:
