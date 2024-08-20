@@ -232,7 +232,7 @@ body{
     color: white;
     padding: 5px;
     border-radius: 3px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.3;
     width: calc(100% - 20px);
     text-align: center;
