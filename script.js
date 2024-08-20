@@ -53,7 +53,7 @@ function showPage(page) {
                     <title>Home</title>
                 </head>
                 <h1 class="hedpr"><span style="color: red;">IT CLUB</span><span style"color: black;">SMK TRIMULIA JAKARTA</span></h1>
-                <img src="Assets/logo.jpeg" alt="Logo IT Club Trimulia" class="photocvr">
+                <img src="assets/logo.jpeg" alt="Logo IT Club Trimulia" class="photocvr">
                 <p class="txtcontent">IT Club Trimulia didirikan pada tahun 2023 dengan tujuan untuk membekali siswa-siswi dengan keterampilan teknologi yang relevan dengan perkembangan zaman. Di bawah bimbingan Bapak Solihin, eskul ini berupaya menciptakan lingkungan belajar yang menyenangkan dan inspiratif. Melalui berbagai kegiatan yang diselenggarakan, siswa-siswi tidak hanya memperoleh pengetahuan baru, tetapi juga dapat mengembangkan soft skills seperti problem-solving, teamwork, dan kreativitas.</p>
                 <h2>Siapa Pencipta IT Club Trimulia?</h2>
                 <div class="pencipta">
