@@ -87,7 +87,7 @@ function showPage(page) {
                 <head>
                     <title>Projek</title>
                 </head>
-                <h1></h1>
+                <h1><span style="color: red">Projek</span><span style="color: yellow">IT Club</span></h1>
                 <p>IT Club TRIMULIA menyediakan beberapa projek yang akan dijadikan acuan untuk pembelajaran, pada dasarnya sebuah projek akan mengambil waktu paling sedikit yaitu 1 bulan. <br> 
                 Dibawah ini merupakan beberapa projek yang kami sediakan yaitu:</p>
                 <a href="#wdev"><img src="Assets/testdongs.png" class="prjk"></a>
