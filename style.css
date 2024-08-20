@@ -225,7 +225,7 @@ body{
 }
 
 .photoname{
-    position: absolute;
+    /*position: absolute;*/
     bottom: 10px;
     left: 10px;
     background-color: grba (0,0,0,0.5);
