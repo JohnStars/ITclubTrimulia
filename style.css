@@ -205,13 +205,25 @@ body{
 }
 
 /*project subpages*/
-.prjkicon{
+.prjkhover{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
     justify-content: center;
 }
+
+.prjkicon{
+    position: relative;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.prjkicon img{
+    width: 100%;
+    height: auto;
+    display: block;
 
 .doubleprjk{
     display: flex;
@@ -244,6 +256,24 @@ body{
     height: auto;
 }
 
+.pjrkname {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: calc(100% - 20px);
+    text-align: center;
+}
+
+.prjkicon:hover .prjkname{
+    opacity: 1;
+}
+    
 /*member subpages*/
 .listanggota{
     display: flex;
