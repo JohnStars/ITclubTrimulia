@@ -29,7 +29,7 @@
         const data = {};
         formData.forEach((value, key) => (data[key] = value));
 
-        fetch('https://script.google.com/a/macros/smktrimulia.sch.id/s/AKfycbzEtQK2yio38SRwODh_4kY44UyqXrzqRXZlrRiezvRvVCDcjoJBM35LEmlErZQWsjn0Qw/exec', {
+        fetch('https://script.google.com/macros/s/AKfycbzEtQK2yio38SRwODh_4kY44UyqXrzqRXZlrRiezvRvVCDcjoJBM35LEmlErZQWsjn0Qw/exec', {
             method: 'POST',
             body: JSON.stringify(data),
             headers: {
