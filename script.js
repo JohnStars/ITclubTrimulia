@@ -118,15 +118,16 @@ function showPage(page) {
                 </head>
                 <h1 class="hedpr"><span style="color: red;">Projek</span>IT Club</h1>
                 <p class="txtcontent">IT Club TRIMULIA menyediakan beberapa projek yang akan dijadikan acuan untuk pembelajaran, pada dasarnya sebuah projek akan mengambil waktu paling sedikit yaitu 1 bulan. <br> 
-                Dibawah ini merupakan beberapa projek yang kami sediakan yaitu:</p>\
-                    <div class="container">
-                        <div class="left-content">
-                            <h2>Website Development</h2>
-                            <p class="txtcontent">Pada project ini, anggota IT Club diarkan cara untuk membuat atau mengedit website dengan cara yang lumayan mudah untuk diikuti sebagai pembuka materi awal. </p>
-                        </div>
-                    <div class="right-content">
-                        <img src="assets/webdev.png" alt="Right Side Image">
+                Dibawah ini merupakan beberapa projek yang kami sediakan yaitu:</p>
+                <div class="prjkicon">
+                    <div class="containerProject">    
+                        <a href="#wdev"><img src="assets/webdev.png" class="prjk"></a>
+                        <div class="projectHover"> Web Dev </div>
                     </div>
+                    <div class="containerProject">
+                    <a href="#arduino"><img src="assets/IoT.png" class="prjk"></a>
+                        <div class="ProjectHover"> IoT </div>
+                    </div>                
                 </div>
                     `;
             break;
