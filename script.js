@@ -136,19 +136,7 @@ function showPage(page) {
                     <title>Kontak</title>
                 </head>
                 <h1 class="hedpr"><span style="color: red;">Kontak</span>IT Club</h1>
-                    <form id="contactForm">
-                        <label for="name">Nama:</label>
-                            <input type="text" id="name" name="name" required><br><br>
-    
-                        <label for="email">Jurusan (sertakan Kelas):</label>
-                            <input type="email" id="email" name="email" required><br><br>
-    
-                        <label for="message">Pesan untuk tim IT Club TM:</label><br>
-                            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-    
-                        <input type="submit" value="Send">
-</form>
-
+                <a href="Submissionform.html"><button>Join Here!</button></a>
                 `;
             break;
         case 'wdev':
@@ -216,22 +204,3 @@ function showPage(page) {
     // Update the URL hash without causing the page to jump
     window.history.pushState(null, null, `#${page}`);
 }
-
-//Contact Submission
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const formData = new FormData(this);
-    const data = {};
-    formData.forEach((value, key) => (data[key] = value));
-
-    fetch('https://script.google.com/a/macros/smktrimulia.sch.id/s/AKfycbzEtQK2yio38SRwODh_4kY44UyqXrzqRXZlrRiezvRvVCDcjoJBM35LEmlErZQWsjn0Qw/exec', {
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    }).then(response => response.json())
-      .then(result => alert('Form submitted successfully!'))
-      .catch(error => alert('Error submitting form'));
-});
