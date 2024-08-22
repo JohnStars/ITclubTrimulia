@@ -136,7 +136,7 @@ function showPage(page) {
                     <title>Kontak</title>
                 </head>
                 <h1 class="hedpr"><span style="color: red;">Kontak</span>IT Club</h1>
-                <a href="Submissionform.html"><button>Join Here!</button></a>
+                <a href="Submissionform.html" target="_blank"><button>Join Here!</button></a>
                 `;
             break;
         case 'wdev':
