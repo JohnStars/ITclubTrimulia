@@ -119,14 +119,13 @@ function showPage(page) {
                 <h1 class="hedpr"><span style="color: red;">Projek</span>IT Club</h1>
                 <p class="txtcontent">IT Club TRIMULIA menyediakan beberapa projek yang akan dijadikan acuan untuk pembelajaran, pada dasarnya sebuah projek akan mengambil waktu paling sedikit yaitu 1 bulan. <br> 
                 Dibawah ini merupakan beberapa projek yang kami sediakan yaitu:</p>\
-                <div class="prjkhover"
-                    <div class="prjkicon">
-                        <a href="#wdev"><img src="assets/webdev.png" class="prjk"></a>
-                        <div class="prjkname">Web Dev</div>
-                    </div>
-                    <div class="prjkicon">
-                        <a href="#arduino"><img src="assets/IoT.png" class="prjk"></a>
-                        <div class="prjkname">IoT</div>
+                    <div class="container">
+                        <div class="left-content">
+                            <h2>Website Development</h2>
+                            <p class="txtcontent">Pada project ini, anggota IT Club diarkan cara untuk membuat atau mengedit website dengan cara yang lumayan mudah untuk diikuti sebagai pembuka materi awal. </p>
+                        </div>
+                    <div class="right-content">
+                        <img src="assets/webdev.png" alt="Right Side Image">
                     </div>
                 </div>
                     `;
@@ -137,7 +136,20 @@ function showPage(page) {
                     <title>Kontak</title>
                 </head>
                 <h1 class="hedpr"><span style="color: red;">Kontak</span>IT Club</h1>
-                <p class="txtcontent">Untuk menghubungi kami anda bisa dengan menghubungi Pak Solihin dengan email yang sudah tercantum di halaman utama atau menelepon beliau dengan menggunakan no telephone (kami tidak dapat memberikan no telephone karena itu adalah data privasi, silahkan tanya kepada para pengurus IT Club atau meminta bantuan dari guru di SMK Trimulia)</p>`;
+                    <form id="contactForm">
+                        <label for="name">Nama:</label>
+                            <input type="text" id="name" name="name" required><br><br>
+    
+                        <label for="email">Jurusan (sertakan Kelas):</label>
+                            <input type="email" id="email" name="email" required><br><br>
+    
+                        <label for="message">Pesan untuk tim IT Club TM:</label><br>
+                            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+    
+                        <input type="submit" value="Send">
+</form>
+
+                `;
             break;
         case 'wdev':
             contentDiv.innerHTML = `
@@ -204,3 +216,22 @@ function showPage(page) {
     // Update the URL hash without causing the page to jump
     window.history.pushState(null, null, `#${page}`);
 }
+
+//Contact Submission
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    const data = {};
+    formData.forEach((value, key) => (data[key] = value));
+
+    fetch('https://script.google.com/a/macros/smktrimulia.sch.id/s/AKfycbzEtQK2yio38SRwODh_4kY44UyqXrzqRXZlrRiezvRvVCDcjoJBM35LEmlErZQWsjn0Qw/exec', {
+        method: 'POST',
+        body: JSON.stringify(data),
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    }).then(response => response.json())
+      .then(result => alert('Form submitted successfully!'))
+      .catch(error => alert('Error submitting form'));
+});
